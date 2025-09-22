@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Cascadia Code", sans-serif;
+}
+.Item-button Button{
+    margin-top: 10px;
+    width: 100px;
+    background-color: rgb(240, 125, 116);
+    color: white;
+}
+.heart-button button:hover{
+    background-color: red;
+}
+.spinner{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.spinner-border{
+    height: 50PX;
+    width: 50PX;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px; /* spacing between buttons */
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+.category-btn {
+  color: black;
+  border-radius: 20px;
+  border: 1px solid #d9d9d9;
+  background: white;
+  transition: color 0.3s ease;
+}
+
+.category-btn:hover {
+  color: rgb(240, 125, 116);
+  border-color: rgb(240, 125, 116);
+}
+
+.category-btn-selected {
+  color: white !important;
+  background-color: rgb(240, 125, 116) !important;
+  border-color: rgb(240, 125, 116) !important;
+}
+
+
+/*-----------------register and login---------*/
+/* Whole page background */
+.auth-page {
+    display: flex;
+    height: 100vh;
+    background: #fff3f2; /* Light version of the theme color */
+  }
+  
+  /* Left image side */
+  .auth-image-side {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .auth-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.5); /* dim the image */
+  }
+  
+  /* Right form side */
+  .auth-form-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  
+  /* Form container */
+  .form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #f2f2f2;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    color: rgb(240, 125, 116);
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* Footer link area */
+  .form-footer {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Let child items define their width */
+    gap: 16px;
+  }
+  
+  .form-footer .ant-btn {
+    align-self: center; /* Center just the button */
+  }
+  
+  .form-footer a {
+    color: rgb(240, 125, 116);
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  
+  /* AntD Button Custom Style */
+  .ant-btn-primary {
+    background-color: rgb(240, 125, 116);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    height: 40px;
+    transition: all 0.3s ease;
+  }
+  
+  .ant-btn-primary:hover {
+    background-color: rgb(200, 90, 85); /* Darker theme color */
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .auth-page {
+      flex-direction: column;
+    }
+  
+    .auth-image-side {
+      height: 200px;
+      width: 100%;
+    }
+  
+    .auth-form-side {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .form-container {
+      margin: 0 auto;
+    }
+  }
+/* Help Center custom styles */
+.help-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.help-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #222;
+}
+
+.help-subtitle {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.help-search {
+  margin-bottom: 24px;
+}
+
+.faq-section .faq-header {
+  margin-bottom: 16px;
+  font-weight: bold;
+  color: #444;
+}
+
+.local-support ul {
+  padding-left: 18px;
+  list-style: disc;
+  color: #333;
+}
+
+.contact-support button {
+  margin-top: 12px;
+}
+
+/*-------printing bill button------------*/
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .print-content, .print-content * {
+    visibility: visible;
+  }
+
+  .print-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+:where(.css-dev-only-do-not-override-1v5z42l).ant-modal .ant-modal-close {
+  color: currentColor;
+}
+ 
+.highlight-row {
+  background-color: rgb(245, 213, 213) !important; /* light yellow */
+}
+
+:where(.css-dev-only-do-not-override-1v5z42l).ant-modal .ant-modal-content {
+    position: relative;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    pointer-events: auto;
+    padding: 20px 24px;
+    width: 30em;
+}
+.generated-row {
+  background-color: #b0d6a5 !important; /* light green to indicate generated */
+}
