@@ -1,30 +1,55 @@
 {
-  "name": "pos-mern",
-  "version": "1.0.0",
-  "description": "pos mern app",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\" ",
-    "seed": "node seeder.js"
-  },
-  "author": "shinetech",
-  "license": "MIT",
-  "dependencies": {
-    "bcryptjs": "^3.0.2",
-    "body-parser": "^1.20.3",
-    "colors": "^1.4.0",
-    "concurrently": "^9.1.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "mongoose": "^8.12.1",
-    "morgan": "^1.10.0",
-    "nodemon": "^3.1.9",
-    "otp-generator": "^4.0.1",
-    "react-to-print": "^3.1.0",
-    "twilio": "^5.8.0"
-  }
+    "proxy": "http://localhost:8080",
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@ant-design/icons": "^5.6.1",
+        "@ant-design/v5-patch-for-react-19": "^1.0.3",
+        "@redux-devtools/extension": "^3.3.0",
+        "@testing-library/dom": "^10.4.0",
+        "@testing-library/jest-dom": "^6.6.3",
+        "@testing-library/react": "^16.3.0",
+        "@testing-library/user-event": "^13.5.0",
+        "antd": "^5.24.8",
+        "axios": "^1.8.4",
+        "bcryptjs": "^3.0.2",
+        "html2pdf.js": "^0.10.3",
+        "moment": "^2.30.1",
+        "otp-generator": "^4.0.1",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "react-redux": "^9.2.0",
+        "react-router-dom": "^7.5.2",
+        "react-scripts": "5.0.1",
+        "react-to-print": "^3.1.0",
+        "redux": "^5.0.1",
+        "redux-thunk": "^3.1.0",
+        "twilio": "^5.8.0",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }
