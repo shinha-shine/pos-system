@@ -1,0 +1,179 @@
+
+#components-layout-demo-custom-trigger .trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+    
+  }
+  
+  #components-layout-demo-custom-trigger .trigger:hover {
+    color: #f17e5b;
+  }
+  
+  #components-layout-demo-custom-trigger .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .site-layout .site-layout-background {
+    background: #ffffff;
+    box-shadow: 0 0 3px #ccc;
+    margin-left: 15px;
+    border-radius: 5px; 
+    overflow: auto;
+  }
+
+  .ant-layout-has-sider{
+    padding: 10px;
+    border-radius: 5px;
+     height: 100vh;
+    padding-top: 10px;
+  }
+
+
+  .anticon[tabindex] {
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.ant-layout-header {
+  line-height: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-item{
+  padding-left: 20px;
+  padding-right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 50%;
+    color: red;
+    padding-left: 15px;
+
+}
+
+.ant-layout-sider-collapsed .company-name,
+.ant-layout-sider-collapsed .company-name1 {
+  display: none;
+}
+
+.sidebar-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin: auto;
+}
+
+
+.logo-container {
+  display: inline;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 5px;
+  flex-wrap: nowrap; /* prevent logo and name from stacking */
+  
+}
+
+.sidebar-logo {
+  height: 65px;
+  border-radius: 50%;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.company-name {
+    color: rgb(122, 45, 45);
+    font-size: 18px;
+    display: inline;
+    font-weight: bold;
+    word-break: break-word;
+    line-height: 1.2;
+    margin-top: none;
+}
+.company-name1{
+  color: rgb(122, 45, 45);
+    font-size: 20px;
+     font-weight: bold;
+    word-break: break-word;
+    line-height: .01;
+    text-align: center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 0%;
+}
+
+.ant-layout-sider-children {
+    height: 100%;
+    margin-top: -0.1px;
+    padding-top: 0.1px;
+    background-color: rgb(245, 213, 213);
+}
+
+.cart-item {
+  color: #000;
+  font-weight: 500;
+}
+.ant-menu-title-content, 
+:where(.css-dev-only-do-not-override-1v5z42l)
+.ant-menu-inline.ant-menu-root .ant-menu-submenu-title >.ant-menu-title-content {
+    flex: auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+    font-weight: bold;
+}
+.ant-menu-inline, :where(.css-dev-only-do-not-override-1v5z42l).ant-menu-dark>.ant-menu.ant-menu-root.ant-menu-inline, :where(.css-dev-only-do-not-override-1v5z42l).ant-menu-dark.ant-menu-root.ant-menu-vertical, :where(.css-dev-only-do-not-override-1v5z42l).ant-menu-dark>.ant-menu.ant-menu-root.ant-menu-vertical {
+    border-inline-end: 0px solid rgba(5, 5, 5, 0.06);
+    background-color: rgb(245, 213, 213);
+}
+
+.ant-menu-item-icon svg, 
+:where(.css-dev-only-do-not-override-1v5z42l).ant-menu .ant-menu-submenu-title .ant-menu-item-icon svg {
+    display: inline-block;
+    color: black;
+     font-weight: bold;
+
+}
+:where(.css-dev-only-do-not-override-1v5z42l).ant-card .ant-card-body {
+    padding: 24px;
+    border-radius: 0 0 8px 8px;
+    padding-bottom: 10px;
+}
+
+:where(.css-dev-only-do-not-override-1v5z42l).ant-card [class^="ant-card"], :where(.css-dev-only-do-not-override-1v5z42l).ant-card [class*=" ant-card"] {
+    box-sizing: border-box;
+    text-align: left;
+}
+
+:where(.css-dev-only-do-not-override-1v5z42l).ant-card .ant-card-meta-description {
+    color: rgba(0, 0, 0, 0.45);
+    font-style: italic;
+}
+
+:where(.css-dev-only-do-not-override-1v5z42l).ant-popconfirm .ant-popconfirm-buttons button {
+    margin-inline-start: 8px;
+    height: 25px;
+    width: 45px;
+    border-radius: 10%;
+}
+:where(.css-dev-only-do-not-override-1v5z42l).ant-layout-sider .ant-layout-sider-children .ant-menu.ant-menu-inline-collapsed {
+    width: auto;
+    background-color: rgb(245, 213, 213);
+}
+:where(.css-dev-only-do-not-override-1v5z42l).ant-menu-vertical >.ant-menu-item, :where(.css-dev-only-do-not-override-1v5z42l).ant-menu-inline >.ant-menu-submenu>.ant-menu-submenu-title, :where(.css-dev-only-do-not-override-1v5z42l).ant-menu-vertical >.ant-menu-submenu>.ant-menu-submenu-title {
+    height: 40px;
+    line-height: 2;
+}
